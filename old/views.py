@@ -21,3 +21,9 @@ def tag(request):
             }
         }
     return render(request, 'tags.html', context=context)
+
+def filter(request):
+    context = {
+        'text': '  Hello, Welcome to Django Template Filters!  ',        
+    }
+    return render(request, 'filters.html', context)

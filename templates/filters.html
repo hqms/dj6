@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Filters Example{% endblock %}
+
+{% block content %}
+    <h2>Filters Demonstration</h2>
+    <p>Original text: {{ text }}</p>
+    <p>Uppercase: {{ text|upper }}</p>
+    <p>Lowercase: {{ text|lower }}</p>
+    <p>Capitalize: {{ text|title }}</p>
+{% endblock %}
