@@ -1,9 +1,15 @@
-{% for item in items %}
-    <p>{{ item }}</p>
-{% endfor %}    
+{% extends "base.html" %}
 
-{% if user.is_authenticated %}
-    <p>Welcome, {{ user.first_name }}!</p>
-{% else %}
-    <p>Please log in to access more features.</p>
-{% endif %}
+{% block title %}Tags Example{% endblock %}
+
+{% block greeting %}
+    {% if user.is_authenticated %}
+        {{ user.first_name }}!    
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% for item in items %}
+        <p>{{ item }}</p>
+    {% endfor %}    
+{% endblock %}
