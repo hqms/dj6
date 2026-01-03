@@ -27,3 +27,6 @@ def filter(request):
         'text': '  Hello, Welcome to Django Template Filters!  ',        
     }
     return render(request, 'filters.html', context)
+
+def comment(request):
+    return render(request, 'comments.html')
