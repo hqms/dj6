@@ -1,0 +1,18 @@
+{% extends "base.html"  %}
+{% block title %}Partial Example{% endblock %}
+
+{% partialdef user-info %}
+    <div class="user-info">
+        <h3>User Information</h3>
+        <p>Name: {{ name }}</p>
+        <p>Age: {{ age }}</p>
+    </div>
+{% endpartialdef %} 
+
+{% block content %}
+    <h1>Using Template Partials</h1>
+    <p>This is an example of how to use template partials in Django.</p>
+
+    {% partial user-info %}
+    
+{% endblock %}
