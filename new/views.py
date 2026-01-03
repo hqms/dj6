@@ -6,3 +6,10 @@ def partial(request):
         'age'  : 30,
     }
     return render(request, 'new/partial.html', context)
+
+def direct_access(request):
+    context = {
+        'name': 'Direct Access',
+        'age'  : 30,
+    }
+    return render(request, 'new/direct_access.html', context=context)

@@ -1,0 +1,12 @@
+{% extends "base.html"  %}
+
+{% block title %}Direct Access Example{% endblock %}
+
+{% block content %}
+
+    <h1>Direct Access to Template Partials</h1>
+    <p>This example demonstrates how to directly access a template partial without using the partial tag.</p>
+
+    {% include "new/partial.html#user-info" %}
+    
+{% endblock %}
