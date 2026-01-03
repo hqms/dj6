@@ -1,3 +1,7 @@
-<h1>Hello, {{ username }}!</h1>
+{% extends "base.html" %}
+{% block title %}Variable Example{% endblock %}
+{% block content %}
+<h1>Variable Example</h1>
 
 Your are {{ user.age }} years old.
+{% endblock %}

@@ -3,11 +3,14 @@
   <title>{% block title %}Title of the page{% endblock %}</title>
 </head>
 <body>
-    
+
   <h1>Hallo, {% block greeting %}Anonymous{% endblock %}</h1>
   <p>
     {% block content %} 
     {% endblock %}
   </p>
+  <footer>
+    <p><a href="{% url 'home' %}">Home</a></p>
+  </footer>
 </body>
 </html>
