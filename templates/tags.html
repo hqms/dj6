@@ -1,0 +1,9 @@
+{% for item in items %}
+    <p>{{ item }}</p>
+{% endfor %}    
+
+{% if user.is_authenticated %}
+    <p>Welcome, {{ user.first_name }}!</p>
+{% else %}
+    <p>Please log in to access more features.</p>
+{% endif %}
